@@ -13,8 +13,8 @@ class OperationKind(str, Enum):
 
 class Operation(BaseModel):
     id: int
-    data: date
-    king: OperationKind
+    date: date
+    kind: OperationKind
     amount: Decimal
     description: Optional[str]
 
